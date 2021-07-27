@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Card} from "./Components/Cards/Card";
-
+// import {Cards} from "./Components/Cards/Cards_old";
+import {Trend_Card} from "./Components/Cards/Trend_Card"
 
 // import { Button, Card } from 'react-bootstrap';
 
@@ -8,10 +8,11 @@ import {Card} from "./Components/Cards/Card";
 function App() {
   return (
     <div className="App">
-      <Card />
-      <Card />
-      <Card />
-      <Card />  
+      {/* <Cards />
+      <Cards />
+      <Cards />
+      <Cards /> */}
+      <Trend_Card />  
 
   </div>
   );
