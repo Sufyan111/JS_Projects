@@ -8,11 +8,8 @@ import {DonationCard} from './Components/Cards/DonationCard'
 function App() {
   return (
     <div className="App">
-      {/* <Cards />
-      <Cards />
-      <Cards />
-      <Cards /> */}
-      <DonationCard />  
+      
+        
       <DonationCard />  
 
   </div>
