@@ -1,28 +1,32 @@
-.Card{
+.card{
     text-align: center;
-    border: 3px solid black;    
     width: 300px;
     height: auto;
-    display: inline-block;
-    padding: 10px;
-    margin: 25px;
+    margin: auto;
+    box-shadow: 0 0 10px black !important;
 
 }
 
 
-.Card:hover{
+.card:hover{
     box-shadow: 0 4px 10px black;
     cursor: pointer;
     transform: scale(1.005);
     transition-duration: 0.25s ;
 }
 
-.button-container{
+.buttons{
     margin-top: 15px;
     display: flex;
     justify-content: space-between;
+    
 }
 
+#card-container{
+    padding: 25px;
+    margin: auto;
+
+}
 
 button{
     cursor: pointer;

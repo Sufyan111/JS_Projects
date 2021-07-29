@@ -1,7 +1,14 @@
 import React from "react";
 import { Card, Button, ProgressBar } from "react-bootstrap";
+import "./Card.css";
 
-export const Trend_Card = () => {
+export const CardChild = ({
+  CardTitle,
+  CardImage,
+  DonationAmount,
+  DonationCollected,
+  CreatedBy,
+}) => {
   return (
     <div>
       <link
@@ -12,26 +19,29 @@ export const Trend_Card = () => {
         referrerpolicy="no-referrer"
       />
       <Card style={{ width: "20rem" }}>
-        <Card.Img variant="top" src="Person.png" />
+        <Card.Img variant="top" src={CardImage} />
         <Card.Body>
-          <Card.Title>Card Title</Card.Title>
+          <Card.Title>{CardTitle}</Card.Title>
 
           <div className="Money">
             Donation progress: <br />
             <p>
-              <b>&#8377; 7,50,000 </b> raised of &#8377; 10,00,000
+              <b>&#8377; {DonationCollected} </b> raised of &#8377;{" "}
+              {DonationAmount}
             </p>
             <ProgressBar variant="primary" now={75} />
             <p>
-              Created by : <i>Rahul Sharma</i>
+              Created by : <i>{CreatedBy}</i>
             </p>
           </div>
-          <Button variant="primary">
-            <i class="fas fa-donate"></i> &nbsp;Donate
-          </Button>
-          <Button variant="primary">
-            <i class="fas fa-share-alt"></i> &nbsp;Share
-          </Button>
+          <div className="buttons">
+            <Button variant="primary">
+              <i class="fas fa-donate"></i> &nbsp;Donate
+            </Button>
+            <Button variant="primary">
+              <i class="fas fa-share-alt"></i> &nbsp;Share
+            </Button>
+          </div>
         </Card.Body>
       </Card>
     </div>
