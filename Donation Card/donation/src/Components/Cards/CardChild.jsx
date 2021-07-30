@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Button, ProgressBar, Row, Col } from "react-bootstrap";
+import { Card, Button, ProgressBar, Col} from "react-bootstrap";
 import "./Card.css";
 
 export const CardChild = ({

@@ -1,6 +1,5 @@
 import { CardChild } from "./CardChild";
 import { CardReducer } from "../../Reducers/CardReducer";
-import { Row, Col } from "react-bootstrap";
 
 export const DonationCard = () => {
   return (
